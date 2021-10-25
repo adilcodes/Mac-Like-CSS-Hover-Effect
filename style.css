@@ -30,26 +30,38 @@ body{
     border-radius: 50%;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
     transform-origin: bottom;
 }
-.sm-btn::before{
+.sm-btn::after{
     content: '';
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    background: rgb(167, 165, 165);
+    top: -22px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+.sm-btn:hover::after{
+    opacity: 1;
+}
+.sm-btn::before{
     position: absolute;
     width: 78px;
     height: 25px;
-    background: #fff !important;
+    background: rgb(167, 165, 165) !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
     border-radius: 4px;
-    top: -32px;
+    top: -38px;
     padding: 0px 5px;
     color: #000;
-    /* opacity: 0; */
+    z-index: 999;
+    opacity: 0;
 }
-
 .sm-btn:hover::before{
     opacity: 1;
 }
@@ -85,6 +97,7 @@ body{
 }
 .sm-btn:hover{
     transform: scale(1.2);
+    margin: 0px 8px;
 }
 .sm-icon{
     color: #fff;
