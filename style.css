@@ -5,7 +5,12 @@
 body{
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     min-height: 100vh;
     background: rgb(224, 224, 224);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
 }
