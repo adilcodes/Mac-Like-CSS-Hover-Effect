@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     display: flex;
@@ -12,5 +13,66 @@ body{
 .container{
     display: flex;
     justify-content: space-around;
-    width: 330px;
+    width: 440px;
+    background: rgba(146, 146, 146, 0.513);
+    border-radius: 3px;
+    padding: 5px 0px;
+}
+.sm-btn{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    transform-origin: bottom;
+}
+.sm-btn::before{
+    content: 'Tooltip';
+    position: absolute;
+    width: 78px;
+    height: 25px;
+    background: rgb(204, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    top: -32px;
+    color: #000;
+    /* opacity: 0; */
+}
+.sm-btn:hover::before{
+    opacity: 1;
+}
+.sm-btn-fb{
+    background: #3A559F;
+}
+.sm-btn-tw{
+    background: #50ABF1;
+}
+.sm-btn-insta{
+    background: #DD2B75;
+}
+.sm-btn-lin{
+    background: #0077B7;
+}
+.sm-btn-cp{
+    background: #000000;
+}
+.sm-btn-gh{
+    background: #212529;
+}
+.sm-btn:hover{
+    transform: scale(1.2);
+}
+.sm-icon{
+    color: #fff;
+    font-size: 30px !important;
 }
