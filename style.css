@@ -8,13 +8,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(224, 224, 224);
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 .container{
     display: flex;
     justify-content: space-around;
     width: 440px;
-    background: rgba(97, 97, 97, 0.513);
     border-radius: 3px;
     padding: 5px 9px;
 }
@@ -32,13 +31,14 @@ body{
     cursor: pointer;
     transition: 0.2s ease-in-out;
     transform-origin: bottom;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .sm-btn::after{
     content: '';
     height: 13px;
     width: 13px;
     position: absolute;
-    background: rgb(167, 165, 165);
+    background: #333333;
     top: -22px;
     border-radius: 2px;
     transform: rotate(45deg);
@@ -51,33 +51,34 @@ body{
     position: absolute;
     width: 78px;
     height: 25px;
-    background: rgb(167, 165, 165) !important;
+    background: #333333 !important;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
     top: -38px;
     padding: 0px 5px;
-    color: #000;
+    color: #fff;
     z-index: 999;
     opacity: 0;
 }
 .sm-btn:hover::before{
     opacity: 1;
+    transform: scale(0.9);
 }
 .sm-btn-fb::before,
 .sm-btn-fb{
-    background: #3A559F;
+    background-color: #3b5999;
     content: 'Facebook';
 }
 .sm-btn-tw::before,
 .sm-btn-tw{
-    background: #50ABF1;
+    background-color: #46c1f6;
     content: 'Twitter';
 }
 .sm-btn-insta::before,
 .sm-btn-insta{
-    background: #DD2B75;
+    background-color: #e1306c;
     content: 'Instagram';
 }
 .sm-btn-lin::before,
@@ -92,7 +93,7 @@ body{
 }
 .sm-btn-gh::before,
 .sm-btn-gh{
-    background: #212529;
+    background-color: #333333;
     content: 'Github';
 }
 .sm-btn:hover{
