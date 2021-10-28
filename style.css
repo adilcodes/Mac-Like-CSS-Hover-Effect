@@ -31,7 +31,7 @@ body{
     cursor: pointer;
     transition: 0.2s ease-in-out;
     transform-origin: bottom;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 13px 20px 13px 7px rgb(0 0 0 / 48%);
 }
 .sm-btn::after{
     content: '';
